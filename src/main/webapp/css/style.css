@@ -1,0 +1,44 @@
+.custom_bg{
+	
+	background:#673ab7!important;
+}
+  .admin .card{
+	
+	border:1px solid #673ab7!important;
+}
+  .admin .card:hover{
+	background:#e2e2e2!important;
+	cursor:pointer!important;
+	 
+}
+
+ .list-group-item.active{
+	background:#673ab7!important;
+	border-color:#673ab7!important;
+	
+}
+
+
+.discount-label{
+	
+	font-size: 12px!important;
+	font-style: italic!important;
+	
+}
+.vvk{
+	text-decoration:line-through!important;
+}
+
+/* product card ko hover krne k lia */
+.product-card:hover{
+	
+	background:#e2e2e2!important;
+	cursor:pointer!important;
+}
+.card-column{
+	
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+
+}

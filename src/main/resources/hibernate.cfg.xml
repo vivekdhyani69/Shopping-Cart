@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	
+<!-- 	write all configuration of orm in this confi -->
+	<hibernate-configuration>
+	<session-factory>
+	<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+	<property name="connection.url">jdbc:mysql://localhost:3306/eCart</property>
+	<property name="connection.username">root</property>
+	<property name="connection.password">1234</property>
+	<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+	
+	<!-- ///This  (hbm2ddl.auto) automatic table creates krta hai database me-->
+	<property name="hbm2ddl.auto">update</property>
+	<property name="show _sql">true</property>
+
+<!-- //jo be table bnayi hai uski mapping karo
+ -->
+<mapping class="com.Entity.User"/>
+<mapping class="com.Entity.Product"/>
+<mapping class="com.Entity.Category"/> 
+
+	</session-factory>
+	
+	
+	</hibernate-configuration>
